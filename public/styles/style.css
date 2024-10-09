@@ -10,7 +10,7 @@ body{
 :root {
     --tamanho-header: 80px;
     --tamanho-footer: 65px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-banner: calc(60vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
 }
 
@@ -18,7 +18,7 @@ body{
 /* Header das Paginas */
 .header{
     height: var(--tamanho-header);
-    border-bottom: 2px solid #32b9cd;
+    border-bottom: 5px solid #32b9cd;
 }
 
 .header .container{
@@ -29,7 +29,7 @@ body{
 
 .header a {
     text-decoration: none;
-    color: #e3b062;
+    color: #FFFF;
 }
 
 
@@ -71,11 +71,7 @@ body{
     width: 50%;
     margin: 0;
     padding: 0;
-    font-size: 36px;
-}
-
-.banner .container span{
-    font-weight: 800;
+    font-size: 30px;
 }
 
 /*Social - Misão Visão Valores*/
@@ -90,14 +86,16 @@ body{
 .social .container .boxes{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    width: 60%;
     padding: 30px 0;
 }
 
 .box{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
+    gap: 20px;
 }
 
 .box img{
@@ -105,6 +103,16 @@ body{
 }
 
 /* footer das Paginas */
+
+.textSocial{
+    text-align: center;
+}
+
+.imgSocial{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .footer{
     background-color: #32b9cd;
